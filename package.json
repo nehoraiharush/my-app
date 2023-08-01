@@ -15,7 +15,7 @@
   "scripts": {
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "PUBLIC_URL=https://nehoraiharush.github.io/my-app/ react-scripts build",
+    "build": "PUBLIC_URL=/my-app react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
