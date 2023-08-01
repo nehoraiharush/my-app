@@ -1,21 +1,11 @@
-import './App.css';
+// import './App.css';
+import Lottie from 'lottie-react';
+import some_lottie from './animation_lkstr2k4.json'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex justify-center items-center bg-blue-500 h-screen m-0">
+      <Lottie animationData={some_lottie} loop={true} style={{ width: '40%' }} />
     </div>
   );
 }
