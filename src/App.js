@@ -1,12 +1,18 @@
-// import './App.css';
-import Lottie from 'lottie-react';
-import some_lottie from './animation_lkstr2k4.json'
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Component from './Component';
+import H1 from './H1';
+
+export const APPNAME = '/my-app'
 
 function App() {
   return (
-    <div className="flex justify-center items-center bg-blue-500 h-screen m-0">
-      <Lottie animationData={some_lottie} loop={true} style={{ width: '40%' }} />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path={`${APPNAME}/`} element={<Component />} />
+        <Route path={`${APPNAME}/h1`} element={<H1 />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
