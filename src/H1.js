@@ -7,7 +7,11 @@ const H1 = () => {
     const text = state?.text;
 
     return (
-        <div>{text}</div>
+        <div style={{ height: '100vh', width: '100%' }}>
+            <h1 style={{ backgroundColor: '#3fc' }}>
+                {text}
+            </h1>
+        </div>
     )
 }
 
